@@ -1,0 +1,39 @@
+@import '../../../sass/variables';
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    transition: all .2s ease-in-out 0s;
+    visibility: hidden;
+    position: fixed;
+    z-index: 9999;
+}
+.menumobile{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;;
+    height: 100%;
+    padding: 0 15px;
+    min-height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 9999;
+    transition: all .6s cubic-bezier(.77,0,.175,1);
+    display: flex;
+    flex-direction: column;
+    &__closecontainer{
+        display: flex;
+        justify-content: flex-end;
+        svg{
+            cursor: pointer;
+            margin-top: 5px;
+            fill:$iconColor;
+        }
+    }
+}
+.active{
+    visibility: visible;
+    left: 0;
+}

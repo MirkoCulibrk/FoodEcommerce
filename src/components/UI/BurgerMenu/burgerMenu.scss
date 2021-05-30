@@ -1,0 +1,22 @@
+@import '../../../sass/variables';
+.burgermenu{
+    padding: 0;
+    border: none;
+    outline: 0;
+    border-radius: 0;
+    cursor:pointer;
+    &__line{
+        width: 20px;
+        height: 2px;
+        display: block;
+        background-color: $iconColor;
+        transition: all .3s ease-in-out 0s;
+        position: relative;
+        &--top{
+            top:-5px;
+        }
+        &--bottom{
+            top:5px;
+        }
+    }
+}

@@ -73,10 +73,10 @@ const config = {
 if(currentTask=="build"){
   config.module.rules[1].use[0]=MiniCssExtractPlugin.loader;
   config.plugins.push(new MiniCssExtractPlugin({
-    filename:'main.[hash].css',
+    filename:"main.[hash].css",
   }),
     new CleanWebpackPlugin(),
     new WebpackManifestPlugin()
-  )
+  );
 }
 module.exports = config;

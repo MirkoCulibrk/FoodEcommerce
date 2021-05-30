@@ -1,0 +1,45 @@
+
+@import '../../../sass//variables';
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.6);
+    transition: all .2s ease-in-out 0s;
+    visibility: hidden;
+    position: fixed;
+    z-index: 9999;
+}
+.searchmodal{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;;
+    height: 60px;
+    padding: 10px 15px;
+    background-color: #fff;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 9999;
+    transition: all .6s cubic-bezier(.77,0,.175,1);
+    &__body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .searchform{
+            width: 90%;
+        }
+        >svg{
+            fill:$iconColor;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+        }
+    }
+
+   
+}
+
+.active{
+    visibility: visible;
+    top: 0;
+}

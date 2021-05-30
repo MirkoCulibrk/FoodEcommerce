@@ -1,0 +1,28 @@
+@import '../../sass/mixins';
+.navigation{
+    background-color: #fff;
+    border-bottom: 1px solid rgb(0 0 0 / .09);
+    padding: 5px 0;
+    .container{
+        @include flex;
+        justify-content: space-between;
+        height: 70px;
+    }
+    &__icons{
+        @include flex;
+        justify-content: space-between;
+        margin-right: 35px;
+    }
+    &__navcontainer{
+        &--rigth{
+            order: 1;
+
+        }
+    }
+    // modifier
+    &--rigth{
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+    }
+}
